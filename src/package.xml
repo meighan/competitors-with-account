@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitors Tracking</fullName>
+    <description>Track Competitors with Accounts and a junction object for Opps</description>
+    <types>
+        <members>Opportunity_Competitor__c.O2C_Compact_Layout</members>
+        <name>CompactLayout</name>
+    </types>
+    <types>
+        <members>Account.CEO__c</members>
+        <members>Account.Competitor_Advantages__c</members>
+        <members>Account.Customers__c</members>
+        <members>Account.Our_Advantages__c</members>
+        <members>Account.Percent_of_Marketshare__c</members>
+        <members>Account.Selling_Tips__c</members>
+        <members>Account.Source_of_Customer_Rating__c</members>
+        <members>Account.Status__c</members>
+        <members>Account.Target_Market__c</members>
+        <members>Account.Their_Pricing__c</members>
+        <members>Account.Who_they_are_better_for__c</members>
+        <members>Opportunity.Closed_Lost_Reason__c</members>
+        <members>Opportunity.Lost_to_Competitor__c</members>
+        <members>Opportunity_Competitor__c.Additional_Details__c</members>
+        <members>Opportunity_Competitor__c.Competitor_Account__c</members>
+        <members>Opportunity_Competitor__c.Competitor_Disqualified__c</members>
+        <members>Opportunity_Competitor__c.Competitor_Weaknesses__c</members>
+        <members>Opportunity_Competitor__c.Disqualified__c</members>
+        <members>Opportunity_Competitor__c.Lost_Details__c</members>
+        <members>Opportunity_Competitor__c.Opportunity_Stage__c</members>
+        <members>Opportunity_Competitor__c.Opportunity__c</members>
+        <members>Opportunity_Competitor__c.Our_Advantages__c</members>
+        <members>Opportunity_Competitor__c.Our_Weaknesses__c</members>
+        <members>Opportunity_Competitor__c.PowerOfOne__c</members>
+        <members>Opportunity_Competitor__c.Won__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Opportunity_Competitor__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Opportunity_Competitor__c.ClosedOpp</members>
+        <members>Opportunity_Competitor__c.CompetitorCorpDetails</members>
+        <members>Opportunity_Competitor__c.CompetitorSalesTips</members>
+        <name>FieldSet</name>
+    </types>
+    <types>
+        <members>Competitive_Analysis_Team</members>
+        <name>Group</name>
+    </types>
+    <types>
+        <members>Opportunity_Competitor__c-Admin Competitor2Opp Layout</members>
+        <members>Opportunity_Competitor__c-EU Competitor2Opp Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Account.Add_to_Opportunity</members>
+        <members>Opportunity.Add_Competitor</members>
+        <members>Opportunity_Competitor__c.Add_to_Opp</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>Opportunity_Competitor__c.Opp_Must_be_Lost_for_Competitor_Won</members>
+        <name>ValidationRule</name>
+    </types>
+    <version>50.0</version>
+</Package>

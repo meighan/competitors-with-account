@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Closed_Lost_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Closed Lost Reason</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>StageName</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Budget</fullName>
+                    <default>false</default>
+                    <label>Budget</label>
+                </value>
+                <value>
+                    <fullName>Timeline</fullName>
+                    <default>false</default>
+                    <label>Timeline</label>
+                </value>
+                <value>
+                    <fullName>Competitor</fullName>
+                    <default>false</default>
+                    <label>Competitor</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Closed Lost</controllingFieldValue>
+                <valueName>Budget</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed Lost</controllingFieldValue>
+                <valueName>Timeline</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed Lost</controllingFieldValue>
+                <valueName>Competitor</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Lost_to_Competitor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lost to Competitor</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Id</field>
+                <operation>equals</operation>
+                <valueField>Opportunity_Competitor__c.Opportunity__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>$Source.StageName</field>
+                <operation>equals</operation>
+                <value>Closed Lost</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Opportunity_Competitor__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+</CustomObject>
