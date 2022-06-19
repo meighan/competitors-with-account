@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>CEO__c</fullName>
+        <description>Name of the CEO</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the CEO</inlineHelpText>
+        <label>CEO</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Competitor_Advantages__c</fullName>
+        <description>The Competitors advantages over our product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Competitors advantages over our product</inlineHelpText>
+        <label>Competitor Advantages</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Customers__c</fullName>
+        <description>Number of Customers the Competitor has</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Customers the Competitor has</inlineHelpText>
+        <label># of Customers</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Our_Advantages__c</fullName>
+        <description>Our Product or Service Advantages Over the Competitor</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Our Product or Service Advantages Over the Competitor</inlineHelpText>
+        <label>Our Advantages</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Percent_of_Marketshare__c</fullName>
+        <description>How much of the market they have as customers.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How much of the market they have as customers.</inlineHelpText>
+        <label>Percent of Marketshare</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Selling_Tips__c</fullName>
+        <description>Selling Tips against the Competitor</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Selling Tips against the Competitor</inlineHelpText>
+        <label>Selling Tips</label>
+        <length>32000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Source_of_Customer_Rating__c</fullName>
+        <description>Where we obtained the customer rating data</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Where we obtained the customer rating data</inlineHelpText>
+        <label>Source of Customer Rating</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Target_Market__c</fullName>
+        <description>Who is buying their product? Enterprise Corps, SMB, Consumers, High end, luxury, affordable, etc</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Who is buying their product/the characteristics of their target buyer.  
+
+Example terms:  Enterprise Corps, SMB, Consumers, High end, luxury, affordable, etc</inlineHelpText>
+        <label>Target Market</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Their_Pricing__c</fullName>
+        <description>When comparing their pricing to ours, how do they stand vs us?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When comparing their pricing to ours, how do they stand vs us?</inlineHelpText>
+        <label>Their Pricing</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Much Higher</fullName>
+                    <default>false</default>
+                    <label>Much Higher</label>
+                </value>
+                <value>
+                    <fullName>Slightly Higher</fullName>
+                    <default>false</default>
+                    <label>Slightly Higher</label>
+                </value>
+                <value>
+                    <fullName>About the Same</fullName>
+                    <default>false</default>
+                    <label>About the Same</label>
+                </value>
+                <value>
+                    <fullName>Slightly Lower</fullName>
+                    <default>false</default>
+                    <label>Slightly Lower</label>
+                </value>
+                <value>
+                    <fullName>Much Lower</fullName>
+                    <default>false</default>
+                    <label>Much Lower</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Who_they_are_better_for__c</fullName>
+        <description>The market that is better suited with the competitors product than ours</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The market that is better suited with the competitors product than ours</inlineHelpText>
+        <label>Who they are better for</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+</CustomObject>
